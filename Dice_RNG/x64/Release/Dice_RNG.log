@@ -1,0 +1,19 @@
+﻿Build started 10/18/2015 6:25:27 PM.
+     1>Project "C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\Dice_RNG\Dice_RNG.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp Utilities.cpp
+         main.cpp
+         Utilities.cpp
+     1>Utilities.cpp(71): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\x64\Release\Dice_RNG.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\x64\Release\Dice_RNG.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\x64\Release\Dice_RNG.lib" /MACHINE:X64 x64\Release\main.obj
+         x64\Release\Utilities.obj
+         Generating code
+         All 221 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+         Finished generating code
+         Dice_RNG.vcxproj -> C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\x64\Release\Dice_RNG.exe
+     1>Done Building Project "C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\Dice_RNG\Dice_RNG.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.76
