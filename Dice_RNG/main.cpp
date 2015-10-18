@@ -7,12 +7,17 @@ using namespace std;
 int main()
 {
 	//initilize srand with seed 1
-	int seed = 1;				//seed
-	srand((time_t)seed);		//init srand with seed of 1
+	int seed;					//seed
 	const int DIE_SIDES = 6;	//const for side die sides
 	vector<int> numbersRolled;	//initi vector
 	int n = 0;					//number of rolls
 	
+	//ask user for seed
+	cout << "Enter Seed" << endl;
+	cin >> seed;
+
+	//inti srand
+	srand((time_t)seed);
 	//get n number of rolls from the user
 	cout << "How many rolls?" << endl;
 	cin >> n;
