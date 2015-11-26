@@ -1,11 +1,30 @@
 #include<iostream>
 #include "aHistogram.h"
+#include <string>
 using namespace std;
+
+
+//internal helper method that return the index of the  max number in the vector
+int aHistogram::findMaxIndex(vector<int> vctr, int maxPos) const
+{
+	int max = vctr.at(0);
+	for (int i = 0; i < vctr.size(); ++i)
+	{
+		if (vctr.at(i) > max)
+		{
+			maxPos = i;
+			max = vctr.at(i);
+		}
+	}
+	return maxPos;
+}
 
 aHistogram::aHistogram()
 {
-	maxCount = 0;
+	starCount = 0;
+	maxIndex = 0;
 	numbersRolled.resize(DIE_SIDES, 0);
+	xHolder.resize(DIE_SIDES,"");
 }
 
 aHistogram::~aHistogram()
@@ -19,20 +38,17 @@ void aHistogram::update(int face)
 	++numbersRolled.at(face);
 }
 
-void aHistogram::display(int maxLengthOfLine) const
+void aHistogram::display() 
 {
-	const int STAR_MAX = 60;
 	int i = 0, j = 0;
-	int maxIndex = 0;
-	int starCount;
-	vector<string> xHolder(vtr.size());
+	
 
-	maxIndex = findMaxIndex(vtr, maxIndex);
+	maxIndex = findMaxIndex(numbersRolled, maxIndex);
 
 	//make to histogram
-	for (i = 0; i < vtr.size(); ++i)
+	for (i = 0; i < numbersRolled.size(); ++i)
 	{
-		starCount = ((double)vtr.at(i) / vtr.at(maxIndex)) * STAR_MAX;
+		starCount = ((double)numbersRolled.at(i) /numbersRolled.at(maxIndex)) * STAR_MAX;
 		for (int k = 0; k < starCount; ++k)
 		{
 			xHolder.at(i) += "x";
@@ -40,19 +56,19 @@ void aHistogram::display(int maxLengthOfLine) const
 
 	}
 	//print the histogram
-	for (int i = 0; i < vtr.size(); ++i)
+	for (int i = 1; i < numbersRolled.size(); ++i)
 	{
-		cout << i + 1 << "\t" << xHolder.at(i) << endl;
+		cout << i << ": " << count(i) << "\t" << xHolder.at(i) << endl;
 	}
 
 }
 
-void aHistogram::count(int face) const
+int aHistogram::count(int face) const
 {
-	cout << "You rolled " << face << " " << numbersRolled.at(face) << endl;
+	return numbersRolled.at(face);
 }
 
 void aHistogram::clear()
 {
-
+	xHolder.clear();
 }
