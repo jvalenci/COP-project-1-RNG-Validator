@@ -16,7 +16,8 @@ public:
 private:
 	int maxCount;
 	vector<int> numbersRolled;
-	int const DIE_SIDES = 6;
+	vector<string> xHolder;
+	int const DIE_SIDES = 7; // one extra to not use 0
 
 };
 
