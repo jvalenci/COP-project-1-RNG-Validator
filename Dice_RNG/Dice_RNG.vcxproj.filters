@@ -30,6 +30,9 @@
     <ClCompile Include="aDice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="aHistogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StoreRolls.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="aDice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aHistogram.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

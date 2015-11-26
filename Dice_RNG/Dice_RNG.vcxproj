@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="aDice.cpp" />
+    <ClCompile Include="aHistogram.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="printRolls.cpp" />
     <ClCompile Include="storeRolls.cpp" />
@@ -155,6 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aDice.h" />
+    <ClInclude Include="aHistogram.h" />
     <ClInclude Include="PrintRolls.h" />
     <ClInclude Include="StoreRolls.h" />
     <ClInclude Include="PrintHistogram.h" />

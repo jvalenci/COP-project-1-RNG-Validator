@@ -14,7 +14,7 @@ class aDice
 		~aDice();
 
 		//roll a 6 sided dice and return a side.
-		int roll();
+		int roll() ;
 
 
 };
