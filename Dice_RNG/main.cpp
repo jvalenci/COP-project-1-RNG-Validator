@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
-#include "Utilities.h"
+#include "StoreRolls.h"
+#include "PrintHistogram.h"
+#include "PrintRolls.h"
 
 using namespace std;
 
