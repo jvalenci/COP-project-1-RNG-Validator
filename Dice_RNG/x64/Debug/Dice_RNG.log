@@ -1,5 +1,26 @@
-﻿Build started 10/18/2015 9:00:18 PM.
+﻿Build started 11/27/2015 1:00:15 PM.
+
+Project Performance Summary:
+      194 ms  C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\Dice_RNG\Dice_RNG.vcxproj   1 calls
+                194 ms  Clean                                      1 calls
+
+Target Performance Summary:
+        0 ms  AfterClean                                 1 calls
+        0 ms  BeforeClean                                1 calls
+        0 ms  AfterCppClean                              1 calls
+        0 ms  Clean                                      1 calls
+        0 ms  BeforeCppClean                             1 calls
+        0 ms  _SplitProjectReferencesByFileExistence     1 calls
+        0 ms  CleanReferencedProjects                    1 calls
+        0 ms  CleanPublishFolder                         1 calls
+        0 ms  CppClean                                   1 calls
+        1 ms  AssignProjectConfiguration                 1 calls
+        4 ms  CoreClean                                  1 calls
+        4 ms  _PrepareForClean                           1 calls
+        6 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
+       13 ms  PGInstrumentedClean                        1 calls
+      165 ms  CoreCppClean                               1 calls
 
 Build succeeded.
 
-Time Elapsed 00:00:00.07
+Time Elapsed 00:00:00.19
