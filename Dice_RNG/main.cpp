@@ -1,15 +1,14 @@
 #include <iostream>
 #include <vector>
-#include "StoreRolls.h"
-#include "PrintHistogram.h"
-#include "PrintRolls.h"
 #include "aDice.h"
 #include "aHistogram.h"
+#include <time.h>
 
 using namespace std;
 
 int main()
 {
+	clock_t tStart = clock();
 	//initilize srand with seed 1
 	int seed;					//seed
 	int n = 0;					//number of rolls
@@ -19,12 +18,18 @@ int main()
 	aHistogram histo;
 	
 	//ask user for seed
-	cout << "Enter Seed" << endl;
+	cout << "Enter Seed, if you enter 0 the sequence will be completely random." << endl;
 	cin >> seed;
+	
+	//inti srand
+	if (seed == 0)
+		srand(time(NULL));
+	else
+		srand((time_t)seed);
+
 	cout << endl; // for spacing
 
-	//inti srand
-	srand((time_t)seed);
+	
 	//get n number of rolls from the user
 	cout << "How many rolls?" << endl;
 	cin >> n;
@@ -36,38 +41,11 @@ int main()
 	{
 		histo.update(die.roll());
 	}
-
+	
+	//prints the histogram
 	histo.display();
-	/*
-	
-	//print the count of rolls
-	printRolls(numbersRolled);
-	cout << endl;
+	printf("Time taken: %.2fs\n", (double)(clock() - tStart) / CLOCKS_PER_SEC);
 
-	//print the Histogram of the rolls
-	printHistogram(numbersRolled);
-	cout << endl;
-	
-	cout << "How many rolls with two dice?" << endl;
-	cin >> n;
-	
-	numbersRolled.clear();
-	numbersRolled.resize((DIE_SIDES + DIE_SIDES), 0);
-
-	//roll the dice n times and store the number in a vector.
-	storeRolls(numbersRolled, n);
-	cout << endl;
-
-	//print the count of rolls
-	printRolls(numbersRolled);
-	cout << endl;
-
-	//print the Histogram of the rolls
-	printHistogram(numbersRolled);
-	cout << endl;
-	*/
-
-	//catches the program before it ends
 	cin >> n;
 	
 	return 0;

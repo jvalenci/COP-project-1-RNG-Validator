@@ -70,5 +70,7 @@ int aHistogram::count(int face) const
 
 void aHistogram::clear()
 {
+	numbersRolled.clear();
 	xHolder.clear();
+	xHolder.resize(DIE_SIDES,"");
 }
