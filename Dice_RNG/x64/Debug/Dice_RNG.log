@@ -1,17 +1,26 @@
-﻿Build started 11/25/2015 11:36:12 PM.
-     1>Project "C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\Dice_RNG\Dice_RNG.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp
-         main.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\x64\Debug\Valencia_Jonathan.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\x64\Debug\Valencia_Jonathan.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\x64\Debug\Valencia_Jonathan.lib" /MACHINE:X64 x64\Debug\aDice.obj
-         x64\Debug\main.obj
-         x64\Debug\printRolls.obj
-         x64\Debug\storeRolls.obj
-         x64\Debug\printHistogram.obj
-         Dice_RNG.vcxproj -> C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\x64\Debug\Valencia_Jonathan.exe
-     1>Done Building Project "C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\Dice_RNG\Dice_RNG.vcxproj" (Build target(s)).
+﻿Build started 11/27/2015 1:00:15 PM.
+
+Project Performance Summary:
+      194 ms  C:\Users\JValencia\Documents\Visual Studio 2015\Projects\Validating Random Number generator\COP-project-1-RNG-Validator\Dice_RNG\Dice_RNG.vcxproj   1 calls
+                194 ms  Clean                                      1 calls
+
+Target Performance Summary:
+        0 ms  AfterClean                                 1 calls
+        0 ms  BeforeClean                                1 calls
+        0 ms  AfterCppClean                              1 calls
+        0 ms  Clean                                      1 calls
+        0 ms  BeforeCppClean                             1 calls
+        0 ms  _SplitProjectReferencesByFileExistence     1 calls
+        0 ms  CleanReferencedProjects                    1 calls
+        0 ms  CleanPublishFolder                         1 calls
+        0 ms  CppClean                                   1 calls
+        1 ms  AssignProjectConfiguration                 1 calls
+        4 ms  CoreClean                                  1 calls
+        4 ms  _PrepareForClean                           1 calls
+        6 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
+       13 ms  PGInstrumentedClean                        1 calls
+      165 ms  CoreCppClean                               1 calls
 
 Build succeeded.
 
-Time Elapsed 00:00:04.36
+Time Elapsed 00:00:00.19

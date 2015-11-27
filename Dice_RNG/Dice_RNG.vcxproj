@@ -150,16 +150,10 @@
     <ClCompile Include="aDice.cpp" />
     <ClCompile Include="aHistogram.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="printRolls.cpp" />
-    <ClCompile Include="storeRolls.cpp" />
-    <ClCompile Include="printHistogram.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aDice.h" />
     <ClInclude Include="aHistogram.h" />
-    <ClInclude Include="PrintRolls.h" />
-    <ClInclude Include="StoreRolls.h" />
-    <ClInclude Include="PrintHistogram.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

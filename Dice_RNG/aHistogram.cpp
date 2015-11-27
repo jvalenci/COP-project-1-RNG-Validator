@@ -24,7 +24,6 @@ aHistogram::aHistogram()
 	starCount = 0;
 	maxIndex = 0;
 	numbersRolled.resize(DIE_SIDES, 0);
-	xHolder.resize(DIE_SIDES,"");
 }
 
 aHistogram::~aHistogram()
@@ -38,29 +37,24 @@ void aHistogram::update(int face)
 	++numbersRolled.at(face);
 }
 
-void aHistogram::display() 
+void aHistogram::display()
 {
 	int i = 0, j = 0;
 	
-
 	maxIndex = findMaxIndex(numbersRolled, maxIndex);
 
 	//make to histogram
-	for (i = 0; i < numbersRolled.size(); ++i)
+	for (i = 1; i < numbersRolled.size(); ++i)
 	{
+		cout << " " << i << ": " << count(i) << "  ";
 		starCount = ((double)numbersRolled.at(i) /numbersRolled.at(maxIndex)) * STAR_MAX;
 		for (int k = 0; k < starCount; ++k)
 		{
-			xHolder.at(i) += "x";
+			cout << "x";
 		}
+		cout << endl;
 
 	}
-	//print the histogram
-	for (int i = 1; i < numbersRolled.size(); ++i)
-	{
-		cout << i << ": " << count(i) << "\t" << xHolder.at(i) << endl;
-	}
-
 }
 
 int aHistogram::count(int face) const
@@ -71,6 +65,5 @@ int aHistogram::count(int face) const
 void aHistogram::clear()
 {
 	numbersRolled.clear();
-	xHolder.clear();
-	xHolder.resize(DIE_SIDES,"");
+	numbersRolled.resize(DIE_SIDES, 0);
 }

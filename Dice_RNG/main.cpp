@@ -8,7 +8,6 @@ using namespace std;
 
 int main()
 {
-	clock_t tStart = clock();
 	//initilize srand with seed 1
 	int seed;					//seed
 	int n = 0;					//number of rolls
@@ -44,9 +43,6 @@ int main()
 	
 	//prints the histogram
 	histo.display();
-	printf("Time taken: %.2fs\n", (double)(clock() - tStart) / CLOCKS_PER_SEC);
-
-	cin >> n;
 	
 	return 0;
 }

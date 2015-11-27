@@ -18,7 +18,6 @@ private:
 	int maxIndex;
 	int starCount;
 	vector<int> numbersRolled;
-	vector<string> xHolder;
 	int const DIE_SIDES = 7; // one extra to not use 0
 	int const STAR_MAX = 60; // max number of stars to print
 	int findMaxIndex(vector<int> vctr, int maxPos) const;
